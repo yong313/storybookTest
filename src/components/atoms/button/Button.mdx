@@ -1,0 +1,194 @@
+import {
+  Story,
+  Props,
+  Description,
+  Preview
+} from '@storybook/addon-docs/blocks';
+import Button from '@/components/atoms/button/Button';
+import { ReactComponent as TestIcons } from '@/assets/test_icon.svg';
+
+export const point = {
+  background:'#604bcc',
+  color:'#fff',
+  padding: '3px 10px',
+  borderRadius:'5px',
+}
+
+export const point_02 = {
+  ...point,
+  background:'#BBB2E9',
+}
+
+export const point_03 = {
+  ...point,
+  color: '#717479',
+  background:'#EDEEF2',
+}
+
+export const fontColor = {
+  color: '#604bcc'
+}
+
+export const line = {
+  width: '100%',
+  height: '1px',
+  background:'#efefef'
+}
+
+
+# Button
+### ThanoSQL Button Components
+<div style={{...line}} />
+
+<br />
+
+## Prop
+Button Components에서 사용되는 Props 입니다.
+
+- <span style={{...point}}>variant</span> props로 정해진 style의 button만 사용
+
+
+- <span style={{...point}}>size</span> props로 정해진 button size만 사용
+
+
+- <span style={{...point}}>custom</span> 필요 시 <span style={{...point_02}}>fontSize</span> <span style={{...point_02}}>fonstColor</span> <span style={{...point_02}}>bgColor</span> 를 사용해 폰트의 크기, 색상, 버튼색상만 custom 가능
+
+
+- <span style={{...point}}>disabled</span> boolean으로 조절
+
+
+- <span style={{...point}}>onClick</span> button click event 적용
+
+<Description of={Button} />
+
+<Props of={Button} />
+
+## Styles
+
+### <p style={{...fontColor}}>Head Button</p>
+Head 영역에 사용되는 버튼입니다. (ex. Navigation)
+
+#### <span style={{...point_03}}>variant='square_button_style_01'</span>
+
+<Preview>
+  <Button size='md' variant='header_btn_style_01'>
+    Button
+  </Button>
+  <br />
+  <Button size='md' variant='header_btn_style_01' disabled>
+    Button
+  </Button>
+</Preview>
+
+#### <span style={{...point_03}}>variant='square_button_style_02'</span>
+
+<Preview>
+  <Button size='md' variant='header_btn_style_02'>
+    Button
+  </Button>
+  <br />
+  <Button size='md' variant='header_btn_style_02' disabled>
+    Button
+  </Button>
+</Preview>
+
+<div style={{...line}} />
+
+<br />
+
+### <p style={{...fontColor}}>Square Button</p>
+Contents 영역에 사용되는 버튼입니다. (ex. login)
+
+#### <span style={{...point_03}}>variant='square_button_style_01'</span>
+
+<Preview>
+  <Button size='md' variant='square_button_style_01'>
+    Button
+  </Button>
+  <br />
+  <Button size='md' variant='square_button_style_01' disabled>
+    Button
+  </Button>
+</Preview>
+
+#### <span style={{...point_03}}>variant='square_button_style_02'</span>
+
+<Preview>
+  <Button size='md' variant='square_button_style_02'>
+    Button
+  </Button>
+  <br />
+  <Button size='md' variant='square_button_style_02' disabled>
+    Button
+  </Button>
+</Preview>
+
+#### <span style={{...point_03}}>variant='square_button_style_03'</span>
+
+<Preview>
+  <Button size='md' variant='square_button_style_03'>
+    Button
+  </Button>
+  <br />
+  <Button size='md' variant='square_button_style_03' disabled>
+    Button
+  </Button>
+</Preview>
+
+<div style={{...line}} />
+
+<br />
+
+### <p style={{...fontColor}}>Round Button</p>
+Contents 영역에 사용되는 버튼입니다. (ex. login)
+
+#### <span style={{...point_03}}>variant='round_button_style_01'</span>
+
+<Preview>
+  <Button size='md' variant='round_button_style_01'>
+    Button
+  </Button>
+  <br />
+  <Button size='md' variant='round_button_style_01' disabled>
+    Button
+  </Button>
+</Preview>
+
+#### <span style={{...point_03}}>variant='round_button_style_02'</span>
+
+<Preview>
+  <Button size='md' variant='round_button_style_02'>
+    Button
+  </Button>
+  <br />
+  <Button size='md' variant='round_button_style_02' disabled>
+    Button
+  </Button>
+</Preview>
+
+### <p style={{...fontColor}}>Icon Button</p>
+Contents 영역에 사용되는 버튼입니다. (ex. Console)
+
+#### <span style={{...point_03}}>variant='icon_button_style_01'</span>
+
+<Preview>
+  <Button size='md' variant='icon_button_style_01'>
+    <TestIcons />
+  </Button>
+  <br />
+  <Button size='md' variant='icon_button_style_01' disabled>
+     Button <TestIcons />
+  </Button>
+</Preview>
+
+#### <span style={{...point_03}}>variant='icon_button_style_02'</span>
+
+<Preview>
+  <Button size='md' variant='icon_button_style_02'>
+    <TestIcons />
+  </Button>
+  <br />
+  <Button size='md' variant='icon_button_style_02' disabled>
+      Button <TestIcons />
+  </Button>
+</Preview>
